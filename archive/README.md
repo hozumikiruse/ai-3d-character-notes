@@ -2,6 +2,8 @@
 
 2026-11-08，依使用者指示，在清理本機 3D 實驗檔之前封存。
 
+**清理已完成：**使用者最終指定永久刪除，58 個目標全部完成，銀醬設定與 Godot／Blender 軟體保留。[完成報告](cleanup-2026-11-08/completion-report.md) · [容量及驗證結果](cleanup-2026-11-08/deletion-result.json)。
+
 - [PR-003～PR-009 計劃與驗收／比較報告](plans-and-reviews/)
 - [軟體、檔案與容量盤點](inventory/)
 - [已確認的清理清單與執行前核對](cleanup-2026-11-08/)
