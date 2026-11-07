@@ -1,0 +1,26 @@
+{
+  "mode": "permanent",
+  "archive_commit": "005448652e641c380de7b2ba579987ab8b9e5832",
+  "completed_targets": 58,
+  "failed_targets": 0,
+  "planned_targets": 58,
+  "planned_logical_bytes": 73078500394,
+  "deleted_logical_bytes": 73078500394,
+  "free_before": 140547923968,
+  "free_after": 199680487424,
+  "observed_free_increase": 59132563456,
+  "errors": [],
+  "finished_at": "2026-11-08T00:45:07.9511600+08:00",
+  "deleted_files": 158936,
+  "preserved_character_files": 6,
+  "software_hashes_unchanged": true,
+  "remaining_roots": [
+    "GINCHAN.md",
+    "README.md",
+    "new.png",
+    "references",
+    "reports",
+    "requirements"
+  ],
+  "status": "COMPLETE"
+}
