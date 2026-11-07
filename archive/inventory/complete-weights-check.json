@@ -1,0 +1,14 @@
+[
+  {
+    "path": "runtime/ComfyUI/models/checkpoints/hunyuan3d-dit-v2-mv_fp16.safetensors",
+    "bytes": 4928151562,
+    "sha256": "d36f5881bcdc56726b73e517cd444c13c60732431622da7268145355c8d38e9c",
+    "matches_download_record": true
+  },
+  {
+    "path": "runtime/ComfyUI/models/diffusion_models/trellis_2_int8_convrot.safetensors",
+    "bytes": 5253048192,
+    "sha256": "d01952ad137213f6a868f86b6b877026276f84af5eec23069217475a0bad3a31",
+    "matches_download_record": true
+  }
+]

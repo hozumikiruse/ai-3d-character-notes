@@ -1,0 +1,70 @@
+{
+  "intro": "三個模型已按就緒順序完成本機實測。下方都是實際 GLB 的 Blender 渲染；StdGEN 的有色臉部辨識較好，但仍非精修成品。正式 Godot 資產、原圖與備份均保留。",
+  "resources": "本輪列出的模型、環境與試樣約 37.8 GB 邏輯大小；連同全域快取等，C 槽可用空間淨減約 48.9 GB，目前約剩 133.3 GiB。磁碟差額也包含同時期其他應用程式寫入。StdGEN 模型／程式約 19.80 GB、獨立環境約 6.53 GB；TRELLIS.2 新增權重 5.25 GB，Hunyuan3D-2mv 4.93 GB。",
+  "trials": [
+    {
+      "label": "StdGEN／完整分層精修",
+      "status": "已生成；造型未通過",
+      "summary": "有色正面的角色辨識較好，但灰模顯示眼、口及鼻部幾何仍很弱；瀏海厚重，側背髮黏成殼狀，長髮束缺口，短褲腰邊破損。三個部件共同渲染，沒有額外雕刻。",
+      "license": "官方 checkpoints 限研究用途；本輪試樣不作正式直播或遊戲發布資產。",
+      "render_folder": "renders/pr005/stdgen-refined",
+      "measurements": "1,233,108 三角面，3 個部件；四個成功階段合計約 8.2 分鐘。S-LRM CUDA allocated 峰值 14.565 GiB，超過專用顯存容量，不能宣稱完全在 12 GB 內運作。"
+    },
+    {
+      "label": "TRELLIS.2 全身／面朝向對照",
+      "status": "已生成；造型未通過",
+      "summary": "完整人物輸入能生成體積。此副本只統一面朝向；仍有裂痕、黑點、孔洞與錯誤眼部，髮色偏粉，未達到原圖還原目標。沒有重塑臉或髮束。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/trellis-fullbody-42-normals",
+      "measurements": "2,451,464 三角面；推理／輸出 40.8 秒；整張 GPU 觀測峰值 8544 MiB"
+    },
+    {
+      "label": "Hunyuan3D-2mv／MC／種子 42",
+      "status": "已生成；造型未通過",
+      "summary": "標準網格轉換去除了大片條紋，保留可辨識的髮型層次及後腦體積；瀏海過厚過低，眼周、耳區模糊，髮束仍有穿孔與黏連。無貼圖是本次 shape 試驗的設定。",
+      "license": "Tencent Hunyuan Community 條款包含地域等限制；詳見實測紀錄。",
+      "render_folder": "renders/pr005/hunyuan-mc-42",
+      "measurements": "2,091,602 三角面；推理／輸出 143.8 秒；整張 GPU 觀測峰值 6564 MiB"
+    },
+    {
+      "label": "Hunyuan3D-2mv／MC／種子 123",
+      "status": "已生成；造型未通過",
+      "summary": "第二個固定種子保留髮型走向，但瀏海碎裂、眼周不清楚、側髮空隙及耳區混雜仍存在。未因換種子達到精修完成。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/hunyuan-mc-123",
+      "measurements": "1,719,588 三角面；推理／輸出 91.3 秒；整張 GPU 觀測峰值 8544 MiB"
+    },
+    {
+      "label": "TRELLIS.2 全身／原始網格",
+      "status": "已生成；造型未通過",
+      "summary": "保留生成器原始幾何與頂點色。大量不一致面朝向造成條紋；有頭身體積，但不能直接用作正式角色。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/trellis-fullbody-42",
+      "measurements": "2,451,464 三角面；推理／輸出 40.8 秒；整張 GPU 觀測峰值 8544 MiB"
+    },
+    {
+      "label": "TRELLIS.2 頭部／種子 42",
+      "status": "此輸入試驗失敗",
+      "summary": "本次頭部輸入生成近乎平面的矩形，正面影像不能當作三維頭部成功。側面和灰模可看出缺少體積。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/trellis-42",
+      "measurements": "2,625,342 三角面；推理／輸出 60.7 秒；整張 GPU 觀測峰值 9422 MiB"
+    },
+    {
+      "label": "TRELLIS.2 頭部／種子 123",
+      "status": "此輸入試驗失敗",
+      "summary": "依節點建議改為 pad_factor 1.0 後，第二個固定種子仍生成薄片；早期形狀階段也已是平面。全身輸入對照另列，不能概括模型必然無效。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/trellis-123",
+      "measurements": "4,194,244 三角面；推理／輸出 40.5 秒；整張 GPU 觀測峰值 8417 MiB"
+    },
+    {
+      "label": "Hunyuan／原生 Surface Net 診斷",
+      "status": "轉換對照，未通過",
+      "summary": "原生轉換留下大量非流形邊與不一致面朝向，表面出現條紋與破碎。保留作診斷，不能用這份結果單獨判斷模型。",
+      "license": "研究試跑，尚非可動角色",
+      "render_folder": "renders/pr005/hunyuan-42",
+      "measurements": "2,532,014 三角面；推理／輸出 142.5 秒；整張 GPU 觀測峰值 6776 MiB"
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "date": "2026-11-08",
+  "timezone": "Asia/Taipei",
+  "project_root": "[PROJECT]",
+  "status": "REVIEW_ONLY_NOT_DELETED",
+  "confirmed_scope": "Keep software only; old Godot and Blender projects included in deletion candidates",
+  "proposed_bytes": 72776834858,
+  "proposed_files": 158839,
+  "candidates": [
+    {
+      "relative_path": ".playwright-cli",
+      "kind": "directory",
+      "bytes": 149498,
+      "files": 12,
+      "metadata_snapshot_sha256": "f07f18f456d386116fa057e06cb3ffd5901b497d64228fd4a138adbb052943f5",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "assets",
+      "kind": "directory",
+      "bytes": 213429588,
+      "files": 94,
+      "metadata_snapshot_sha256": "98baf55b642a678032b35adba967964ef1fb1553d21ce25692591f288dfbc1d3",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "backups",
+      "kind": "directory",
+      "bytes": 268178780,
+      "files": 60,
+      "metadata_snapshot_sha256": "85c21f0ace579e6803642475cdb47a3ee963f1ed8d99b321c3df6a288d5d5db8",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "blender",
+      "kind": "directory",
+      "bytes": 41170334,
+      "files": 8,
+      "metadata_snapshot_sha256": "c04e1bc8b1bb145bfd3e20026bff3969a90eb83b1b12e99d25bedd6990bea5ce",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "builds",
+      "kind": "directory",
+      "bytes": 652851540,
+      "files": 6,
+      "metadata_snapshot_sha256": "fabef88b2fcd7c7f3e022a4df54039880ced069a2241dd4a57519efa65e2e55e",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "charakuru",
+      "kind": "directory",
+      "bytes": 17109204,
+      "files": 297,
+      "metadata_snapshot_sha256": "1e8ca27475b63843013d4bcd72a2e89137831fad97ddddafeaf5431d41369c6d",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "experiments",
+      "kind": "directory",
+      "bytes": 830363323,
+      "files": 133,
+      "metadata_snapshot_sha256": "af113268a9f4143c31893a52eaafd4d49a24606b7c91676cbd898c5307ca7539",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "exports",
+      "kind": "directory",
+      "bytes": 18826724,
+      "files": 4,
+      "metadata_snapshot_sha256": "3088e11ae89b3fcc652bfb62d7d435e6bb69051854734f839ed12486c793d4c1",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot",
+      "kind": "directory",
+      "bytes": 10233182,
+      "files": 22,
+      "metadata_snapshot_sha256": "42a0814778f8a50f1ed9adf731bfb35a57f0a7468171242f1bc53ff581beaae0",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-ginchan-mmd",
+      "kind": "directory",
+      "bytes": 125200322,
+      "files": 34,
+      "metadata_snapshot_sha256": "d07f675ee7184ed1fa820b66c477860f536b5d8fe8a327fd3cf7573b67181095",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-ginchan-v17",
+      "kind": "directory",
+      "bytes": 117346729,
+      "files": 34,
+      "metadata_snapshot_sha256": "22ab9a2a31d13ec048c2f9d6c85fb86e4864d30df970d90284dc4bea543c6d73",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-ginchan-v23",
+      "kind": "directory",
+      "bytes": 120304192,
+      "files": 36,
+      "metadata_snapshot_sha256": "40eb492f36d188ad149a30a9b6072242fa1f1d809b4724e03035732d50f751d8",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-mmd",
+      "kind": "directory",
+      "bytes": 415824168,
+      "files": 54,
+      "metadata_snapshot_sha256": "a4042dbefc6d48c16c1c56485a67389de1c554ed5ba7a4d33b6d2529115993bd",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-motion-playground",
+      "kind": "directory",
+      "bytes": 406659736,
+      "files": 88,
+      "metadata_snapshot_sha256": "586de1ae707dbd5587f99aa3ad8865ec23b64965a4a14fe2f9e42513b12b1479",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "godot-stdgen",
+      "kind": "directory",
+      "bytes": 15207075,
+      "files": 21,
+      "metadata_snapshot_sha256": "dd63e2a24cd5a5f3ad2f2406f250b00017144164fde1e42529279bce738c6888",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "logs",
+      "kind": "directory",
+      "bytes": 2171564,
+      "files": 352,
+      "metadata_snapshot_sha256": "ed4463a22647761530d83dae2ece80df0ec4ea35b23bfd873c57af40fcf37995",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "motion",
+      "kind": "directory",
+      "bytes": 4084279,
+      "files": 86,
+      "metadata_snapshot_sha256": "5c0fca910be3cf0a404a84b9357d6b5c632dee58ec17b66f4cc5b8cffb745f18",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "output",
+      "kind": "directory",
+      "bytes": 2365079,
+      "files": 9,
+      "metadata_snapshot_sha256": "6d82cf8258e6c77599c05f99b45062b991956a87a58955741695d38de13213e1",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "renders",
+      "kind": "directory",
+      "bytes": 1208772423,
+      "files": 1958,
+      "metadata_snapshot_sha256": "cacbfee3ead9785ad1a5ed04229a7943c461220d6acb98e03395bdc00011df87",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "reports\\ai-3d-retrospective.template.html",
+      "kind": "file",
+      "bytes": 27265,
+      "files": 1,
+      "metadata_snapshot_sha256": "aa94ca60d18ff8fd99a871be025a6806547f2a8c2420fcf465dcb3775c834273",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "reports\\local-inventory",
+      "kind": "directory",
+      "bytes": 639413,
+      "files": 8,
+      "metadata_snapshot_sha256": "9ffa96a85a55586c0ed6e5223f109d51d1d4feb5ee48173be608d7b3dc10a20c",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "reports\\public",
+      "kind": "directory",
+      "bytes": 15366069,
+      "files": 39,
+      "metadata_snapshot_sha256": "cea512354ef580a04381e2b9420db630614837d67d3cb4ed1dda1cf9193f8e87",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-003-GINCHAN-GODOT.md",
+      "kind": "file",
+      "bytes": 13118,
+      "files": 1,
+      "metadata_snapshot_sha256": "30b4574afa1bbb663a91d39ba2e853006a331509f731b17909b8a1bbe5efb269",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-003-GINCHAN-PLAN.html",
+      "kind": "file",
+      "bytes": 1918253,
+      "files": 1,
+      "metadata_snapshot_sha256": "b1f2e6eb39aff5f5c4aa69561dfff0ccc5323015ef414a12d8dcc8fdbd3c8d88",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-003-PROGRESS.md",
+      "kind": "file",
+      "bytes": 20059,
+      "files": 1,
+      "metadata_snapshot_sha256": "88f5d9c3e28d36589b1b61f36fcabc1f509127b9a9204bbce532d5926120db22",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-004-GINCHAN-COMPARISON.html",
+      "kind": "file",
+      "bytes": 3264378,
+      "files": 1,
+      "metadata_snapshot_sha256": "ce37a1571615d76b9656ae8043ba23456de8da1c87a20f398316b2367f21c58b",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-004-GINCHAN-REFINEMENT.md",
+      "kind": "file",
+      "bytes": 10698,
+      "files": 1,
+      "metadata_snapshot_sha256": "1b688d396f6a21399deabdef2665dcac70101926f7f7022705105ddaa81d3c89",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-004-HEAD-REVIEW.html",
+      "kind": "file",
+      "bytes": 11941186,
+      "files": 1,
+      "metadata_snapshot_sha256": "4da758956c5e31dca46728fde2b824d3a4eb8bc5f1fbf633456df935adfc9d33",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-004-HEAD-REVIEW.md",
+      "kind": "file",
+      "bytes": 4714,
+      "files": 1,
+      "metadata_snapshot_sha256": "73286e2e6a6c080742857de4019a7e6ce535196bc56a6c1f93b57aa922246a7f",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-005-GINCHAN-MODEL-CANDIDATES.md",
+      "kind": "file",
+      "bytes": 9645,
+      "files": 1,
+      "metadata_snapshot_sha256": "3416af957af4f5dcf4cba61987900cd160c4eea3df3324cd3082de974358a05d",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-005-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 4734,
+      "files": 1,
+      "metadata_snapshot_sha256": "bbcb32faf41eeecdc090a741b8f6551c297a9ef8d5c47073e58015b934e15f00",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-005-results.json",
+      "kind": "file",
+      "bytes": 4976,
+      "files": 1,
+      "metadata_snapshot_sha256": "9ed8097e271fdf5d6beae24bb2260daf30c3143463f28a0e34d50beeeb7e9030",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-005-RESULTS.md",
+      "kind": "file",
+      "bytes": 10071,
+      "files": 1,
+      "metadata_snapshot_sha256": "67a3ddb9ff205b67d7eede2e536f40a0e303e064850a5c80e4b0c1f74092af3c",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-005-REVIEW.html",
+      "kind": "file",
+      "bytes": 81793230,
+      "files": 1,
+      "metadata_snapshot_sha256": "fb1496a5a4998202f994ce2526d117ff3ae07cc9cc5713fe6dd2fbc35b9b54db",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-006-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 2746,
+      "files": 1,
+      "metadata_snapshot_sha256": "b6c4dcc9b86ede4bddc041aaaf22b2100ea84afcf18ce4b842adbe8c5cf6e4ef",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-006-MOTION-PROMPTS.md",
+      "kind": "file",
+      "bytes": 3625,
+      "files": 1,
+      "metadata_snapshot_sha256": "681f73e66147d5a1958300e3f0658167f8b4e51dfee9d82024c926422633f88b",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-006-PROGRESS.md",
+      "kind": "file",
+      "bytes": 2354,
+      "files": 1,
+      "metadata_snapshot_sha256": "fd056364268a438217dc0a04e5c9a8d2da27279662f2eac0da32ef10e566786f",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-006-RESULTS.md",
+      "kind": "file",
+      "bytes": 7306,
+      "files": 1,
+      "metadata_snapshot_sha256": "cfa9ba03e831c1141dcb6724c869fbd750c5c8da520fb415b25180adf9d800be",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-006-STDGEN-MOTION-SHOWCASE.md",
+      "kind": "file",
+      "bytes": 3745,
+      "files": 1,
+      "metadata_snapshot_sha256": "666adc60edd20ce2ff4b2c71787c92d3588ee87185afdb385e426b2044586946",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-REVIEW-v18.html",
+      "kind": "file",
+      "bytes": 21280039,
+      "files": 1,
+      "metadata_snapshot_sha256": "a2c440390a4d35f642a76d0c3cce6e569cc7e9a80766886e50ad617a8a89eb5d",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-REVIEW-v6.html",
+      "kind": "file",
+      "bytes": 11570105,
+      "files": 1,
+      "metadata_snapshot_sha256": "d7269fa51fe09c95675eac87db971d24488d662f5fa12a0539a1f7b79d2c4feb",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-REVIEW.html",
+      "kind": "file",
+      "bytes": 27785170,
+      "files": 1,
+      "metadata_snapshot_sha256": "66a5c6e4c3493e0f552f22b3bb7391cc588465299e0980cdc2b0ed21e7082861",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-V14-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 8003,
+      "files": 1,
+      "metadata_snapshot_sha256": "83a324401a18521425947fbf639383f4656e548b98f51b66b35abe7e037532c8",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-V17-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 7997,
+      "files": 1,
+      "metadata_snapshot_sha256": "26bc7e75dda081502f3c0778fa9735d336102144688ff83d0ef309802d1df7e9",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-V20-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 8132,
+      "files": 1,
+      "metadata_snapshot_sha256": "fb9f6cbd8699f6ed5ac8743441fc2f806b4ce6bfbfec239a73bc36bc7aa9e203",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-V23-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 7406,
+      "files": 1,
+      "metadata_snapshot_sha256": "d57e57e408c9763102b1fd196d6fa1f418e09c3eb07e0b229a0486cc4cfa1331",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-ASSEMBLY-V5-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 8534,
+      "files": 1,
+      "metadata_snapshot_sha256": "94ac92c1c60a4fdc527ed6d442c18de5448a2db595c8eae386d0ea7aaba4e0c8",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-BOOTH-BASE-ASSESSMENT.md",
+      "kind": "file",
+      "bytes": 2104,
+      "files": 1,
+      "metadata_snapshot_sha256": "0c007eb11858b5b74b9a63388c8a30b51bce4a2928880685b123b4f3e7bc38d5",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-HEAD-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 6799,
+      "files": 1,
+      "metadata_snapshot_sha256": "98f244100f1b033b225495e87d52d6e0424abc1712a16a10cc1b4b14580298b4",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-HEAD-REVIEW.html",
+      "kind": "file",
+      "bytes": 10822683,
+      "files": 1,
+      "metadata_snapshot_sha256": "1f64e00948223f40008fe03d21b425d07bcd8c7dbb6f7f97f5d7cacbf95cad19",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-MMD-INDEPENDENT-REVIEW.md",
+      "kind": "file",
+      "bytes": 8477,
+      "files": 1,
+      "metadata_snapshot_sha256": "84f700bd8a6dc2f590263a95ca270ba0fbac2150576b3e57bd4d304adc4f2a7a",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-007-MMD-QUALITY-AND-AI-RESEARCH.md",
+      "kind": "file",
+      "bytes": 21439,
+      "files": 1,
+      "metadata_snapshot_sha256": "eeca83ca9500068181587cb7490702104298e5ef565538d94ad7b481a2d70e53",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-008-RESULTS.md",
+      "kind": "file",
+      "bytes": 3412,
+      "files": 1,
+      "metadata_snapshot_sha256": "3fe59bc2ddd650a948eaa194cb0b03c157f682f4c204d7b9cbcd8443501a1414",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "requirements\\PR-008-TEXT-MOTION-INTERFACE.md",
+      "kind": "file",
+      "bytes": 4759,
+      "files": 1,
+      "metadata_snapshot_sha256": "a7393288c5ca92860af5df20795c4bd29dc0448a5992663e00330d31b9bb82de",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "runtime",
+      "kind": "directory",
+      "bytes": 57837617542,
+      "files": 98901,
+      "metadata_snapshot_sha256": "97ef792d940e705747467f867a017db6a3fee9f221c8b659c9a1f20953f4a9c6",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "scripts",
+      "kind": "directory",
+      "bytes": 590805,
+      "files": 147,
+      "metadata_snapshot_sha256": "b8fe4f007b17a3bde07d02d53c092eb06cc584da09c0518eec4322a225c01b14",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "setup",
+      "kind": "directory",
+      "bytes": 10281507733,
+      "files": 56387,
+      "metadata_snapshot_sha256": "0fb54d80694d524c48c286d1c87715bce089571affbdb2e980404c0f61a72a26",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    },
+    {
+      "relative_path": "workflows",
+      "kind": "directory",
+      "bytes": 278394,
+      "files": 16,
+      "metadata_snapshot_sha256": "682f26c8be2af572ca9ea04272119b553a57855825e1064595f4d1a34a893a85",
+      "action": "PROPOSED_DELETE_NOT_EXECUTED"
+    }
+  ],
+  "protected_character_files": [
+    {
+      "path": "new.png",
+      "bytes": 1424120,
+      "sha256": "9fee82b43d144b2e6c12191b57cc0fb6baa06195d4140603b4095880d3847b68"
+    },
+    {
+      "path": "GINCHAN.md",
+      "bytes": 1064,
+      "sha256": "6fab5e79827270061c54966dd515b523c28c67a394af2aad5542c07943a6ab73"
+    },
+    {
+      "path": "references\\back.png",
+      "bytes": 236806,
+      "sha256": "3411db2b95ea8c4d749422229f0a04b1c2acfbf8e826004b9154836ecabd76c6"
+    },
+    {
+      "path": "references\\front.png",
+      "bytes": 241561,
+      "sha256": "b5f78e9ec87f93251eae270b718fb33289fc445a888e30df4523447f6475ef38"
+    },
+    {
+      "path": "references\\ginchan-turnaround-cutout.png",
+      "bytes": 1551852,
+      "sha256": "466ebeb6c9ff64d1d333752ef5d9599a87fb530137ebe7c6d328fde71934c15e"
+    },
+    {
+      "path": "references\\left.png",
+      "bytes": 165917,
+      "sha256": "42c47671a28df6dcdf4a79fb027e1185af77385ecdf1d2f3ecb653c9222f7538"
+    }
+  ],
+  "also_keep": [
+    "README.md",
+    "requirements/PR-009-PROJECT-CLEANUP.md",
+    "reports/cleanup-2026-11-08"
+  ],
+  "out_of_scope": [
+    "All paths outside project root",
+    "Remote GitHub repository and Pages"
+  ],
+  "default_execution_if_later_authorized": "Recycle Bin without automatic emptying"
+}

@@ -1,0 +1,17 @@
+path,bytes,last_modified
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part000,50331648,1794022467.9437323
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part001,62914560,1794022467.4122388
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part002,67108864,1794022463.026229
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part003,50331648,1794022461.276538
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part004,62914560,1794022467.3148935
+[PROJECT]\runtime\ComfyUI\models\checkpoints\hunyuan3d-dit-v2-mv_fp16.safetensors.part005,58720256,1794022465.6070206
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part000,75497472,1794022461.469709
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part001,71303168,1794022463.9060514
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part002,75497472,1794022463.0800362
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part003,37748736,1794022462.9669273
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part004,75497472,1794022467.7012296
+[PROJECT]\runtime\ComfyUI\models\diffusion_models\trellis_2_int8_convrot.safetensors.part005,100663296,1794022466.9710305
+[PROJECT]\runtime\ComfyUI\models\.cache\huggingface\download\diffusion_models\rWeDidgCkTGF8jDOx7JZW0876W0=.d01952ad137213f6a868f86b6b877026276f84af5eec23069217475a0bad3a31.3859fbaa.incomplete,414340464,1794022087.6839657
+[PROJECT]\runtime\ComfyUI\models\.cache\huggingface\download\diffusion_models\rWeDidgCkTGF8jDOx7JZW0876W0=.d01952ad137213f6a868f86b6b877026276f84af5eec23069217475a0bad3a31.7b90c2fa.incomplete,157286400,1794022337.0494764
+[PROJECT]\runtime\ComfyUI\models\.cache\huggingface\download\split_files\P-iifdT3gsGpPOAbTKhkOXYAfVo=.d36f5881bcdc56726b73e517cd444c13c60732431622da7268145355c8d38e9c.0fa55579.incomplete,268273700,1794022032.873862
+[PROJECT]\runtime\ComfyUI\models\.cache\huggingface\download\split_files\P-iifdT3gsGpPOAbTKhkOXYAfVo=.d36f5881bcdc56726b73e517cd444c13c60732431622da7268145355c8d38e9c.7de22914.incomplete,283115520,1794022337.5941992

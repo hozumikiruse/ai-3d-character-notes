@@ -1,0 +1,128 @@
+本機新增項目與清理建議
+盤點日期：2026-11-08（Asia/Taipei）。這份報告只留在本機，沒有放上 GitHub。
+
+沒有執行任何刪除或解除安裝。以下「可刪」都是建議，不是已完成動作。
+容量採檔案邏輯大小：1 GB = 1,000,000,000 bytes。硬連結、壓縮、回收筒會影響實際可用空間，不能把所有列直接相加。
+沒有完整的安裝前快照；新增歸因以專案紀錄核對。共用快取、舊版 Godot 模板等只列目前用量，不宣稱全部是這次新增。
+
+一、現在有多少東西
+專案根目錄：[PROJECT]
+專案邏輯大小：約 72.769 GB，158,791 個檔案（量測時間見 inventory.json）。
+本輪報告與 Git 記錄可能使數字略增，這是盤點快照。
+
+專案內主要程式／環境：
+・ComfyUI 與本機生成權重：21.916 GB。
+  包含 Pixal3D、TRELLIS.2、Hunyuan3D-2mv、DINO、VAE、BiRefNet，以及殘留下載分段。
+・ComfyUI Python 環境：4.561 GB（Python 3.13、PyTorch 等）。
+・StdGEN 程式與權重：19.798 GB；獨立環境：6.533 GB。
+  包含 canonicalize、多視角、S-LRM、SAM、DINO；局部 CUDA 工具另列。
+・MotionBricks 程式與 SOMA 權重：0.768 GB。
+・MotionBricks Python／TensorRT／Warp 環境：3.190 GB。
+・MotionBricks 已編譯引擎：0.659 GB。
+・局部 CUDA 11.8 工具：0.198 GB；StdGEN 安裝下載包：62.9 MB。
+・Charakuru 發行包解壓資料：17.1 MB。
+・MMD Tools：18.6 MB；MPFB 來源：110.2 MB；輔助 Python 套件：1.2 MB。
+  分別位於 runtime/blender_mmd_tools、runtime/mpfb2、runtime/pr007-python-libs。
+
+專案外已安裝／沿用的軟體：
+・Blender 5.2.3：0.960 GB；[USER]\AppData\Local\Programs\Blender Foundation\Blender 5.2。
+・VRoid Studio 2.16.0：1.283 GB；[USER]\AppData\Local\Programs\VRoidStudio。
+・Godot 4.6.3 工具目錄：0.253 GB；[SHARED_TOOLS]\Godot。
+・Godot 4.6.3 Windows 匯出模板：205.4 MB。另有既有 4.5.1 模板約 2.097 GB，未證明是本專案新增，不列為優先刪除。
+・8 個 Blender／視覺審查 skills 合計 0.3 MB；功能可供其他專案使用，刪掉省不了多少空間。
+  名稱：blender-core、blender-retopology-uv、blender-facial-shapekeys、blender-clothing、blender-hair-grooming、blender-stylized-npr、blender-asset-qa、concept-target-visual-gate。
+・VRM Add-on、MMD 匯入及 MPFB 的來源／安裝副本較小，應跟 Blender 工具鏈一起決定，不必為了省空間先刪它們。
+
+共用快取（不能全部歸因本專案）：
+・使用者 uv cache：6.740 GB。
+・使用者 pip cache：6.430 GB。
+・使用者 Hugging Face cache：0.176 GB。
+・專案 setup/uv-cache：9.410 GB。這是本專案的套件安裝快取，可能與環境硬連結。
+・Python 基礎直譯器有共用引用：motion-env 指向 C:/Python/Python312；另外兩個環境指向使用者 uv/python。不要因刪除一個虛擬環境就順手刪掉共用 Python。
+
+二、製作途中產生了什麼檔案
+
+・new.png — 0.001 GB／1 檔：銀醬原始三視圖；使用者提供，必留
+・references — 0.002 GB／4 檔：去背與裁切參考圖
+・blender — 0.041 GB／8 檔：首版與 v2 Blender 工作檔、Blender 自動備份
+・exports — 0.019 GB／4 檔：首版與 v2 GLB 匯出
+・experiments — 0.830 GB／133 檔：StdGEN 試樣、可動展示副本、Uka／混合造型 v1–v24 等研究版本；資料夾出現不代表通過驗收
+・assets — 0.213 GB／94 檔：Uka PMX／貼圖、BOOTH 素體、其他來源素材與授權
+・godot — 0.010 GB／22 檔：銀醬首版工程
+・godot-stdgen — 0.015 GB／21 檔：StdGEN 20 動作工程
+・godot-mmd — 0.416 GB／54 檔：原 Uka 動作對照工程
+・godot-ginchan-mmd — 0.125 GB／34 檔：改編候選 v6 工程
+・godot-ginchan-v17 — 0.117 GB／34 檔：改編候選 v17 工程
+・godot-ginchan-v23 — 0.120 GB／36 檔：改編候選 v23 工程
+・godot-motion-playground — 0.407 GB／88 檔：目前 Uka 27 動作與方向鍵控制工程
+・builds — 0.653 GB／6 檔：銀醬首版、StdGEN、Uka Windows 成品
+・motion — 0.004 GB／86 檔：原始 MotionBricks 輸出、目標姿勢、動作條件與 27 組資料
+・renders — 1.209 GB／1,958 檔：實際渲染、檢查截圖、比較素材、影片及部分 review.blend
+・requirements — 0.171 GB／32 檔：PR-003 至 PR-008 計劃、驗收、研究與比較 HTML
+・logs — 0.002 GB／352 檔：版本、下載、雜湊、修補與測試紀錄
+・scripts — 0.001 GB／146 檔：建模、生成、轉換、重定向、Godot 設定、檢查及本輪盤點腳本
+・workflows — 0.000 GB／16 檔：ComfyUI 生成與對照工作流
+・backups — 0.268 GB／60 檔：使用者要求保留的 PR-004 前備份
+・setup — 10.282 GB／56,387 檔：安裝包、套件快取及專用檢查瀏覽器資料
+
+逐檔清單：project-artifacts.csv，共 3,015 筆。
+它列出製作成果、腳本、來源素材與驗收檔；排除 runtime／setup／charakuru 的依賴細節、匯入快取、Git 物件與本輪 reports，避免十幾萬個套件檔淹沒實際成果。
+資料夾容量清單：folder-sizes.csv；原始量測：inventory.json。父子資料夾重疊，不能全表加總。
+
+三、清理建議（尚未刪除）
+
+A. 比較適合先清的可重建項目
+1. 下載殘留：16 檔，共 1.912 GB。
+   位置：runtime/ComfyUI/models 下的 .incomplete 與 .part000 等分段。
+   完整 Hunyuan／TRELLIS 權重已重新核對下載紀錄中的 SHA-256；結果見 complete-weights-check.json。
+   動手前確認沒有下載／續傳程序仍在使用。逐檔範圍見 download-fragments.csv；不要把正式 .safetensors 一起刪掉。
+2. 已完成安裝的 MSI／EXE／ZIP：共 0.862 GB。
+   位置：setup 資料夾頂層。刪除後不影響已安裝軟體，但離線重裝要重新下載。
+3. Godot .godot 匯入快取：共 0.617 GB。
+   只刪各工程的 .godot 子資料夾，保留 project.godot、assets、scripts、scenes。
+   下一次打開編輯器會重新匯入；先關閉相應編輯器。對已封裝的 EXE 無影響。
+   這三類合計 3.390 GB 邏輯大小，彼此不重複。
+4. setup/uv-cache：9.410 GB，可在安裝程序全部結束後清理。
+   已安裝環境通常仍可使用，但再次安裝可能要下載／重建。硬連結使釋放空間可能遠小於這個數字。
+   共用 uv／pip cache 另有約 13.170 GB，與其他專案有關，應另行處理，不能併入本專案確切節省量。
+
+B. 暫停本機生模後，可選擇整組移除
+1. StdGEN 一組：26.614 GB 邏輯大小。
+   範圍：runtime/StdGEN, runtime/stdgen-env, runtime/cuda-11.8, runtime/stdgen-downloads, runtime/stdgen-torch-cache。
+   影響：不能再用 StdGEN 重新生模；既有 GLB、Blender 工程、Godot 與 EXE 仍可看。
+   建議留下環境鎖定紀錄、Windows patch、腳本和少量原始結果，再決定是否移除這組。
+2. ComfyUI 生模一組：26.476 GB 邏輯大小。
+   範圍：runtime/ComfyUI、runtime/comfy-env。
+   影響：Pixal3D／TRELLIS／Hunyuan 工作流暫時不能再跑，MotionBricks 不依賴這組。
+   必須先保留 runtime/ComfyUI/output 中值得保留的原始輸出，以及 input／user 工作流副本；目前沒有執行移動。
+   若只想移除本輪比較的兩份主權重，TRELLIS.2＋Hunyuan3D-2mv 合計約 10.181 GB；DINO／VAE 可能與 Pixal3D 共用，不能一併猜測刪除。
+3. VRoid Studio：1.283 GB。
+   對目前 Godot＋Uka 路線沒有必要，可透過 Windows 已安裝應用程式解除安裝。不要只刪程式目錄。
+4. 舊版本、渲染與比較頁：可以縮減，但它們有不少唯一修改／失敗證據。
+   不建議現在整包刪 experiments、renders、requirements 或 backups。先挑每階段代表版本與截圖，再列精確範圍。
+   使用者先前要求保留的備份仍然保留；本次沒有取得刪除指示。
+
+StdGEN 與 ComfyUI 兩組合計 53.090 GB 邏輯大小；這是上層方案。
+其中已包含 A 的 ComfyUI 下載殘留及 StdGEN 下載包，不可把重疊項目再加一次。
+所有上述數字是檔案大小，不是保證 C 槽立刻增加的空間；移到回收筒通常要清空才會真正釋放。
+
+C. 建議保留
+・new.png、角色參考圖、重要 Blender／GLB／原始生成結果。
+・builds/uka/Uka-Motion-Playground.exe 及使用說明：約 331.1 MB，已內嵌播放所需資產。
+・godot-motion-playground：要繼續改介面或動作就留，.godot 快取可重建。
+・MotionBricks＋motion-env＋引擎快取：約 4.617 GB。既然仍看好它，這組值得留。
+  只播放封裝 EXE 不需要這組；要重新生成動作才需要。刪引擎快取可省約 0.659 GB，但下次需重編譯。
+・motion、scripts、workflows、重要 logs／requirements：體積小，保存重製方式比省這點空間更有價值。
+・Uka 原作與授權、BOOTH 原作與授權、使用者要求的備份。
+・Blender／Godot 與八個 skills：仍能用於動作、修整和其他專案。
+
+四、這次「總結＋盤點」另外新增的內容
+・reports/public/ai-3d-character-notes/index.html：公開文章，約 4.75 MB，內嵌五張原樣證據圖片。
+・同資料夾 README.md、.nojekyll、Git 記錄；只有這三個文章相關檔案推上公開倉庫。
+・reports/ai-3d-retrospective.template.html：本機文章編輯模板。
+・scripts/build_retrospective.py、audit_project_storage.py、write_cleanup_report.py：打包與只讀盤點腳本。
+・reports/local-inventory：本報告、JSON、容量／成果／下載分段 CSV，全部留在本機。
+・output/playwright/retrospective-*.png：網站排版檢查畫面。
+・沒有新增 AI 權重、沒有建立本機伺服器、沒有解除安裝或刪除檔案。
+
+我建議的取捨：先考慮 A 的下載殘留、安裝包與 Godot 快取；若確定暫停生模，再移除 StdGEN 一組。保留 MotionBricks、Uka 工程及最少量的研究證據。ComfyUI 是否整組移除，取決於你還會不會用它生成模型或圖片。

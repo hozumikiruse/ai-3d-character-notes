@@ -1,0 +1,18 @@
+{
+  "url": "https://alan52013141314.github.io/ai-3d-character-notes/?v=b97e608",
+  "http_status": 200,
+  "live_bytes": 4745133,
+  "local_bytes": 4745235,
+  "matches_after_line_ending_normalization": true,
+  "normalized_sha256": "6a0b0d564c73a1ac981c468e9df019491f94f0e306ff6dc932b45f91fea4148c",
+  "public_files": [
+    "index.html",
+    "README.md",
+    ".nojekyll"
+  ],
+  "desktop_checked": true,
+  "mobile_width": 390,
+  "mobile_no_horizontal_overflow": true,
+  "images": 5,
+  "local_inventory_uploaded": false
+}
